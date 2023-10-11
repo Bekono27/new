@@ -9,6 +9,8 @@ body {
     background-color: #f8fffe;
     color: #333;
     line-height: 1.6;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 .container {
@@ -25,12 +27,14 @@ header {
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center align text */
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 header h1 {
@@ -176,10 +180,201 @@ nav a:hover {
     background-color: #a2c7e5;
 }
 
-/* Footer Styles */
+/* Style for the footer with a linear gradient background */
+/* Style for the footer with a linear gradient background */
 footer {
+    background: linear-gradient(to right, #5f2c82, #49a09d, #a2c7e5); /* Linear gradient background */
+    padding: 10px 0;
     text-align: center;
-    background: linear-gradient(to right, #5f2c82, #49a09d, #a2c7e5);
+    color: #fff;
+    position: absolute; /* Fixed position to keep the footer at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Additional CSS for Login and Register Pages */
+.login-register {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-register h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-register form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-register input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-register .cta-button {
+    padding: 15px 30px;
+    background-color: #ff9904;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-register .cta-button:hover {
+    background-color: #e9190c;
+}
+
+/* Add this CSS to your existing stylesheet or in a new file styles.css */
+/* Checkout Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fffe;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f6d59f;
     color: #fff;
     padding: 10px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#order-summary {
+    float: right;
+    background-color: #ff9904;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+#place-order {
+    background-color: #e9190c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#place-order:hover {
+    background-color: #ff5733;
+}
+
+footer {
+    background-color: #f6d59f;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#checkout-items tr:nth-child(even) {
+    background-color: #f8fffe;
+}
+
+#checkout-items tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Additional styles specific to the checkout page */
+.checkout-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.checkout-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+.checkout-item p {
+    margin: 0;
+}
+
+.subtotal {
+    font-weight: bold;
+}
+
+.checkout-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #49a09d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #a2c7e5;
 }
