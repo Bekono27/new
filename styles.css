@@ -1,30 +1,30 @@
-/* Global Styles */
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8fffe;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 400px;
-    padding: 30px;
     background-color: #fff;
+    margin: 20px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #5f2c82, #49a09d, #a2c7e5);
     color: #fff;
     padding: 20px 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
@@ -34,7 +34,8 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
     margin: 0;
 }
 
@@ -49,47 +50,136 @@ nav a {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #0077cc;
+    background-color: #288990;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #005299;
+    background-color: #00524B;
 }
 
-/* Form Styles */
-.form-group {
+/* Hero Section on Welcome Page */
+.hero {
+    background: url('background-image.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #49a09d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #a2c7e5;
+}
+
+/* Menu Page Styles */
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+}
+
+.menu-item p {
+    color: #444;
     margin: 10px 0;
 }
 
-form label {
-    display: block;
-    font-weight: bold;
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #0077cc;
+.order-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #49a09d;
     color: #fff;
-    border: none;
-    padding: 10px 15px;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #005299;
+.order-button:hover {
+    background-color: #a2c7e5;
+}
+
+/* Cart Page Styles */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item h3 {
+    font-size: 1.3rem;
+}
+
+.cart-item p {
+    color: #444;
+    margin: 5px 0;
+}
+
+.remove-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e9190c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+    background-color: #ff0000;
+}
+
+.checkout-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #49a09d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #a2c7e5;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background-color: #333;
+    background: linear-gradient(to right, #5f2c82, #49a09d, #a2c7e5);
     color: #fff;
     padding: 10px 0;
 }
